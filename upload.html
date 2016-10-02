@@ -43,14 +43,20 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="nav nav-tabs nav-justified">
-          <li>
-            <a href="TrangChinhCuaAdmin.html"></span> Home</a>
+          <li  >
+            <a href="#homeTab" data-toggle="tab" ><span class="glyphicon glyphicon-home"></span> Home</a>
           </li>
           <li class="dropdown" >
-             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Document<b class="caret"></b></a>
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Document<b class="caret"></b></a>
             <ul class="dropdown-menu">
+             <li>
+                <a href="250-500 - Copy.html" >Toeic 250-500</a>
+              </li>
               <li>
-                <a href="#AddDoc1"  data-toggle="tab">Edit documents</a>
+                <a href="500-750 - Copy.html">Toeic 500-750</a>
+              </li>
+              <li>
+                <a href="750-990 - Copy.html" >Toeic 750-990</a>
               </li>
             </ul>
           </li>
@@ -58,27 +64,39 @@
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Test<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="addtest.html">Edit  tests</a>
+                <a href="LISTENING.html">Toeic listening test</a>
+              </li>
+              <li>
+                <a href="READING.html" >Toeic reading test</a>
+              </li>
+              <li>
+                <a href="VOCABULARY.html" >Toeic vocabulary</a>
               </li>
             </ul>
           </li>
-          <li class="dropdown">
-           <a href="#"  data-toggle="dropdown" class="dropdown-toggle">Manage<b class="caret"></b></a>
+          <li class="dropdown active">
+            <a href="#"  data-toggle="dropdown" class="dropdown-toggle">Manage<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="#" data-toggle="tab">Account Management</a>
+                <a href="#UploadDoc" data-toggle="tab">Upload Document</a>
               </li>
               <li>
-                <a href="#" data-toggle="tab">Unique Visitors</a>
+                <a href="shareddocument.html">Shared Document</a>
+              </li>
+              <li>
+                <a href="planstudent.html" >Plan Study</a>
+              </li>
+              <li>
+                <a href="process.html" >Study Process</a>
               </li>
             </ul>
           </li>
-          <li  class="active">
-            <a href="#Discuss" data-toggle="tab">Discuss</a>
+          <li>
+            <a href="DiscusSaukhilogin.html" >Discuss</a>
           </li>
           <li>
-            <div style="margin-left: 50px">
-              <span class="glyphicon glyphicon-user">Admin</span>
+            <div style="margin-right:10px">
+              <span class="glyphicon glyphicon-user">Group1</span>
               <button class="btn btn-default btn-sm" type="button"><a href="trangchinh.html">Log out</a></button>
             </div>
           </li>
@@ -88,35 +106,8 @@
   </div>
 
 <div class="tab-content">
-
-    <div class="tab-pane" id="AddDoc1">
-      <div class="container">
-      <div class="row">
-        <a href="Trang250500CuaAdminAddDoc.html">
-          <img src="adminimg.jpg" width="33%" height="400" title="250-500">
-        </a>
-        <a href="Trang500-750CuaAdminAddDoc.html">
-          <img src="adminimg1.jpg" width="33%" height="400" title="500-750">
-        </a>
-        <a href="Trang750-990CuaAdminAddDoc.html">
-          <img src="toecictest.jpg" width="33%" height="440" title="750-990">
-        </a>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="customDiv"><a href="#" style="font-size: 20px;" >250-500</a></div>
-          </div>
-          <div class="col-md-4">
-            <div class="customDiv"><a href="#" style="font-size: 20px;">500-750</a></div>
-          </div>
-          <div class="col-md-4">
-            <div class="customDiv"><a href="#" style="font-size: 20px;">750-990</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
     
-    <div id="homeTab" class="tab-pane">
+    <div id="homeTab" class="tab-pane ">
 
       <div class="container">
         <p style="font-size: 20px; font-color: violet;">Xin chào tất cả các bạn!
@@ -161,7 +152,7 @@
 
 
 
-  <div class="tab-pane" id="UploadDoc">
+  <div class="tab-pane active" id="UploadDoc">
       <div class="container">
       <div class="row">
         <a href="#">
@@ -192,101 +183,28 @@
       
     </div>
    
-    <div class="tab-pane active" id="Discuss">
+    <div class="tab-pane" id="Discuss">
         <div class="container">
               <h2>Discuss</h2>  
               <form>
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Username</label></th>
-                      <th>Email</th>
-                      <th>Question</th>
-                      <th>Time</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><label><input type="radio" name="optradio"></td>
-                      <td>group1</td>
-                      <td>group1@gmail.com</td>
-                      <td>When can we use the present perfect tense?</td>
-                      <td>Sep 25,2016 14:00</td>
-                    </tr>
-                    <tr>
-                      <td><label><input type="radio" name="optradio"></td>
-                      <td>Mary</td>
-                      <td>mary@example.com</td>
-                      <td>Can you teach me how to pronoun exactly these words "wife, why, white"?</td>
-                      <td>Sep 25,2016 15:00</td>
-                    </tr>
-                    <tr>
-                      <td><label><input type="radio" name="optradio"></td>
-                      <td>July</td>
-                      <td>july@example.com</td>
-                      <td>When can we use the pastperfect tense?</td>
-                      <td>Sep 25,2016 14:00</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="form-group">
+                  <label for="comment">Comment:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
               </form>
-
-                            <div class="container"> 
-                 <button type="button" class="btn btn-warning btn-md pull-right" id="btnDelModal">Delete</button>
-                      <div class="modal fade" data-keyboard ="false" data-backdrop ="static" id="DelModal" tabindex="1">
-                        <div class="modal-dialog modal-sm">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h4 class="modal-title">Delete question</h4>
-                            </div>
-                            <div class="modal-body">
-                              <form align="center">
-                                <p align="center" style="font-size: 20px; color: red;">Do you really want to delete this comment?</p>
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-default"><a href="TrangChinhCuaAdminSauKhiAnDelTrongDiscuss.html">Yes</a></button>
-                                  <button type="button" class="btn btn-default"><a href="TrangChinhCuaAdminActiveDiscuss.html">No</a></button>
-                                </div>    
-                              </form>  
-                            </div>
-                          </div>
-                        </div>
-                       </div> 
-
-                <button type="button" class="btn btn-warning btn-md pull-right" id="btnSendModal">Answer</button>
+              <div class="container">     
+                <button type="button" class="btn btn-warning" id="btnSendModal">Send</button>
                       <div class="modal fade" data-keyboard ="false" data-backdrop ="static" id="SendModal" tabindex="1">
                         <div class="modal-dialog modal-sm">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h4 class="modal-title">Answer question</h4>
+                              <h4 class="modal-title">Send Question</h4>
                             </div>
                             <div class="modal-body">
-                              <form>
-                                <div class="form-group">
-                                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                                <div class="container">     
-                                  <button type="button" class="btn btn-info" id="btnSendModal1">Send</button>
-                                        <div class="modal fade" data-keyboard ="false" data-backdrop ="static" id="SendModal1" tabindex="1">
-                                          <div class="modal-dialog modal-sm">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <h4 class="modal-title">Send Question</h4>
-                                              </div>
-                                              <div class="modal-body">
-                                                    <p>Your answer is sent to user!</p>     
-                                              </div>
-                                              <div class="modal-footer">
-                                                <button class="btn btn-default btn-md" type="button"><a href="TrangChinhCuaAdminActiveDiscuss.html">Back</a></button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                         </div>
-                                </div>  
-                              </form>  
+                                  <p>Your comment is sent. Thanks for sending us your comments</p>     
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-default" type="button" id="btnHideModal4"><a href="#">Close</a></button>
+                              <button class="btn btn-default btn-md" type="button"><a href="TrangChinhSauKhiUserLogIn.html">Back to Home</a></button>
                             </div>
                           </div>
                         </div>
@@ -309,24 +227,12 @@
        $('#btnHideModal1').click(function(){
         $('#RegisterModal').modal('hide');
       });
-       $('#btnHideModal2').click(function(){
-        $('#SendModal').modal('hide');
-      });
-      $('#btnHideModal4').click(function(){
-        $('#SendModal').modal('hide');
-      });
-      $('#btnDelModal').click(function(){
-        $('#DelModal').modal('show');
-      });
     });
   </script>
   <script type="text/javascript">
   $(document).ready(function(){
     $('#btnSendModal').click(function(){
       $('#SendModal').modal('show');
-    });
-    $('#btnSendModal1').click(function(){
-      $('#SendModal1').modal('show');
     });
   });
   </script>
@@ -351,3 +257,5 @@ $(document).ready(function(){
         
 </body>
 </html>
+
+
