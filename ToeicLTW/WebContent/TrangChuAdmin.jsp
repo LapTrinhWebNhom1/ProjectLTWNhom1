@@ -1,8 +1,10 @@
-<!DOCTYPE HTML>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<head>
-		<title>Toeic</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Trang web luyện thi Toeic </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
@@ -65,7 +67,7 @@
 		
 		</script>
 	</head>
-	<body onload="onclicktab('Home.html');">
+	<body onload="onclicktab('Home.jsp');">
 		<div class="header">
 			<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
@@ -76,13 +78,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
+
 					<a class="navbar-brand" href="index.html">toeic</a>
+					
 				</div>
 				<!--/.navbar-header-->
 				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="login.html"><i class="fa fa-user"></i><span>Login</span></a>
+							<a href="TrangChu.jsp"><i class="fa fa-user"></i><span>Admin Logout</span></a>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
@@ -115,28 +119,23 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li onclick="onclicktab('Home.html');">
+						<li onclick="onclicktab('Home.jsp');">
 							<a href="#" >Home</a>
 						</li>
 						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li onclick="onclicktab('managechualogin.html');">
-									<a href="#UploadDoc" >Upload Document</a>
+								<li onclick="onclicktab('Accountmanage.jsp');">
+									<a href="#UploadDoc" >Account Management</a>
 								</li>
-								<li onclick="onclicktab('managechualogin.html');">
-									<a href="#UploadDoc" data-toggle="tab">Shared Document</a>
+								<li onclick="onclicktab('unique1.jsp');">
+									<a href="#UploadDoc" data-toggle="tab">Unique Visitors</a>
 								</li>
-								<li onclick="onclicktab('managechualogin.html');">
-									<a href="#UploadDoc" data-toggle="tab">Plan Study</a>
-								</li>
-								<li onclick="onclicktab('managechualogin.html');">
-									<a href="#UploadDoc" data-toggle="tab">Study Process</a>
-								</li>
+								
 							</ul>
 						</li>
-						<li onclick="onclicktab('Discusschualogin.html');"><a href="#">Discuss</a></li>
+						<li onclick="onclicktab('discussAdmin.jsp');"><a href="#">Discuss</a></li>
 					</ul>
 					</div><!-- /.navbar-collapse -->
 				</div>
@@ -190,9 +189,7 @@
 								</div>
 							</div>
 							
-							
-						</div>
-						<!-- Left and right controls 
+							<!-- Left and right controls -->
 							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 								<span class="sr-only">Previous</span>
@@ -200,7 +197,8 @@
 							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
 								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 								<span class="sr-only">Next</span>
-							</a>-->
+							</a>
+						</div>
 					</div>
 				</div>
 				<!-- //banner -->
@@ -213,8 +211,8 @@
 								<div>
 									<li><label class="tree-toggler" style="font-size:20px">Document Level 250-500</label>
 									<ul class="nav nav-list tree">
-										<li onclick="onclicktab('250-500.html');"><a href="#">Reading</a></li>
-										<li onclick="onclicktab('250-listening.html');"><a href="#">Listening</a></li>
+										<li onclick="onclicktab('250-readingAdmin.jsp');"><a href="#">Reading</a></li>
+										<li onclick="onclicktab('250-listeningAdmin.jsp');"><a href="#">Listening</a></li>
 										
 									</ul>
 								</li>
@@ -222,8 +220,8 @@
 							<div>
 								<li><label class="tree-toggler" style="font-size:20px">Document Level 500-750</label>
 								<ul class="nav nav-list tree">
-									<li onclick="onclicktab('500-listening1.html');"><a href="#">Reading</a></li>
-									<li onclick="onclicktab('500-listening.html');"><a href="#">Listening</a></li>
+									<li onclick="onclicktab('500-readingAdmmin.jsp');"><a href="#">Reading</a></li>
+									<li onclick="onclicktab('500-listeningAdmin.jsp');"><a href="#">Listening</a></li>
 									
 								</ul>
 							</li>
@@ -231,8 +229,8 @@
 						<div>
 							<li><label class="tree-toggler" style="font-size:20px">Document Level 750-990</label>
 							<ul class="nav nav-list tree">
-								<li onclick="onclicktab('700-Reading.html');"><a href="#">Reading</a></li>
-								<li onclick="onclicktab('700-listening.html');"><a href="#">Listening</a></li>
+								<li onclick="onclicktab('750-reading.jsp');"><a href="#">Reading</a></li>
+								<li onclick="onclicktab('750-listeningAdmin.jsp');"><a href="#">Listening</a></li>
 								
 							</ul>
 						</li>
@@ -244,9 +242,9 @@
 					<div>
 						<li><label class="tree-toggler" style=" font-size:20px; ">Test</label>
 						<ul class="nav nav-list tree">
-							<li onclick="onclicktab('Test reading.html');"><a href="#">Toeic Reading Test</a></li>
-							<li onclick="onclicktab('Test listening.html');"><a href="#">Toeic Listening Test</a></li>
-							<li onclick="onclicktab('Test vocabulary.html');"><a href="#">Toeic Vocabulary Test</a></li>
+							<li onclick="onclicktab('testreadingAdmin.jsp');"><a href="#">Toeic Reading Test</a></li>
+							<li onclick="onclicktab('testlistening.jsp');"><a href="#">Toeic Listening Test</a></li>
+							<li onclick="onclicktab('testvocabularyadmin.jsp');"><a href="#">Toeic Vocabulary Test</a></li>
 						</ul>
 					</li>
 				</div>
@@ -254,30 +252,11 @@
 			</ul>
 		</div>
 	</div>
-
+	<div class="col-sm-9">
 		
-		<div class="courses_box1">
-	   <div class="container">
-	   	  <form method="POST" action="index.html" onsubmit="return Validate()" name="vForm">
-	    	<p class="lead">Welcome Back!</p>
-		    <div class="form-group">
-			    <input autocomplete="off" type="text" name="log_username" class="required form-control" placeholder="Username">
-			    <div id="name_error" class="val_error"></div>
-		    </div>
-		    <div class="form-group">
-			    <input autocomplete="off" type="password" class="password required form-control" placeholder="Password" name="log_password">
-			    <div id="password_error" class="val_error"></div>
-		    </div>
-		    <div class="form-group">
-		    	<input type="checkbox" name="remember" value="true"> Remember Me
-		    	<input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Log In">
-		    </div>
-	        <p>Do not have an account? <a href="register.html" title="Sign Up">Sign Up</a></p>
-		 </form>
-	   </div>
+		<div id="Home"></div>
+		
 	</div>
-		
-	
 	
 </div>
 </div>
@@ -322,45 +301,6 @@ continuous: true,
 numeric: true,
 pause:7000
 });
-</script>
-<script type="text/javascript">
-	// GETTING ALL INPUT TEXT FIELDS
-	var username = document.forms["vForm"]["log_username"];
-	var password = document.forms["vForm"]["log_password"];
-
-	// GETTING ALL ERROR OBJECTS
-	var name_error = document.getElementById("name_error");
-	var password_error = document.getElementById("password_error");
-	// SETTING ALL EVENT LISTENERS
-	username.addEventListener("blur", nameVerify, true);
-	
-	function Validate(){
-		// VALIDATE USERNAME
-		if(username.value == ""){
-			name_error.textContent = "Username is required";
-			username.style.border = "1px solid red";
-			username.focus();
-			return false;
-		}
-
-
-		// PASSWORD REQUIRED
-		if (password.value == "") {
-			password_error.textContent = "Password required";
-			password.style.border = "1px solid red";
-			password.focus();
-			return false;
-		}
-	}
-
-	// ADD EVENT LISTENERS
-	function nameVerify(){
-		if (username.value != "") {
-			name_error.innerHTML = "";
-			username.style.border = "1px solid #110E0F";
-			return true;
-		}
-	}
 </script>
 </body>
 </html>

@@ -1,8 +1,10 @@
-<!DOCTYPE HTML>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<head>
-		<title>Toeic</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Trang web luyện thi Toeic </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
@@ -254,16 +256,17 @@
 			</ul>
 		</div>
 	</div>
-
+  <div class="col-sm-9">
 		
 		<div class="courses_box1">
-	   <div class="container">
+	  
 	   	  <form method="POST" action="index.html" onsubmit="return Validate()" name="vForm">
 	    	<p class="lead">Welcome Back!</p>
 		    <div class="form-group">
 			    <input autocomplete="off" type="text" name="log_username" class="required form-control" placeholder="Username">
 			    <div id="name_error" class="val_error"></div>
 		    </div>
+		    
 		    <div class="form-group">
 			    <input autocomplete="off" type="password" class="password required form-control" placeholder="Password" name="log_password">
 			    <div id="password_error" class="val_error"></div>
@@ -272,12 +275,12 @@
 		    	<input type="checkbox" name="remember" value="true"> Remember Me
 		    	<input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Log In">
 		    </div>
-	        <p>Do not have an account? <a href="register.html" title="Sign Up">Sign Up</a></p>
+	        <p>Do not have an account? <a href="register.jsp" title="Sign Up">Sign Up</a></p>
 		 </form>
 	   </div>
-	</div>
-		
 	
+		
+	</div>
 	
 </div>
 </div>
@@ -361,6 +364,7 @@ pause:7000
 			return true;
 		}
 	}
+	
 </script>
 </body>
 </html>
