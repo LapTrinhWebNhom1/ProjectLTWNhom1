@@ -26,7 +26,9 @@
           <br>
           <div style="margin-right:10px">
            <div class="btn-group btn-group-xs" >
+           <li onclick="onclicktab('createremind.jsp')">
         <a href="#" class="btn btn-info" >Tạo nhắc nhỡ mới</a>
+        </li>
         <a href="#" class="btn btn-danger">Xóa nhắc nhỡ</a>
       </div>
       </div>

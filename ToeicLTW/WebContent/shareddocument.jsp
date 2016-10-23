@@ -7,13 +7,53 @@
 <title>Insert title here</title>
 </head>
 <body>
-	 <h3 style="margin-left:30px; color:blue">Shared Document</h3>
-          
-          <h4>Unit 1:Thì hiện tại đơn và thì hiện tạo tiếp diễn</h4>
-            <h5 style="co">Đã chia sẽ đến HaoBui</h5>
-          <h4> Unit 2:Thì hiện tại hoàn thành và thì hiện tại hoàn thành tiếp diễn</h4>
-            <h5>Đã chia sẽ đến HanLiu</h5>
-          <h4>Unit 3:Thì quá khứ đơn và thì quá khứ tiếp diễn</h4> 
-            <h5>Đã chia sẽ đến HieuBui</h5>        
+	 <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg"  title="Share this content" data-toggle="modal" data-target="#myModal">
+<i class="fa fa-share-alt"></i> Share
+</button>
+<!-- Modal -->
+
+
+<div class="modal-content">
+  <div>
+    <h3>Level:</h3>
+    <select class="form-control">
+      <option>Document Level 250-500</option>
+      <option>Document Level 500-750</option>
+      <option>Document Level 750-990</option>
+    </select>
+    <h3>Type:</h3>
+    <select class="form-control">
+      <option>Reading</option>
+      <option>Listening</option>
+    </select>
+    <h3>Unit:</h3>
+   
+    <select class="form-control">
+      <option>Unit 1</option>
+      <option>Unit 2</option>
+      <option>Unit 3</option>
+      <option>Unit 4</option>
+      <option>Unit 5</option>
+      <option>Unit 6</option>
+      <option>Unit 7</option>
+      <option>Unit 8</option>
+      <option>Unit 9</option>
+      <option>Unit 10</option>
+      
+    </select>
+  </div>
+  <div class="modal-body">
+    <form action="" method="post">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+        <input type="email" class="form-control" placeholder="your@email.com">
+      </div>
+      <br />
+      <button type="submit" value="sub" name="sub" class="btn btn-primary"><i class="fa fa-share"></i> Subscribe Now!</button>
+    </form>
+  </div>
+ 
+</div>      
 </body>
 </html>

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+<title>Insert title here</title>
 </head>
 <body>
-	
+	 
     <div class="panel panel-default">
       <div class="panel-heading"><strong>Upload Files</strong></div>
       
@@ -18,25 +18,11 @@
           <div class="form-group">
             <input type="file" name="files[jchj]" id="js-upload-files" multiple>
           </div>
-          <div>
-             <h3>Level:</h3>
-            <select class="form-control" id="sel1">
-              <option>Document Level 250-500</option>
-              <option>Document Level 500-750</option>
-              <option>Document Level 750-990</option>
-            </select>
-            <h3>Type:</h3>
-            <select class="form-control" id="sel2">
-              <option>Reading</option>
-              <option>Listening</option>
-            </select>
-          </div>
           <br>
           <button type="submit" class="btn btn-info" id="js-upload-submit" style="width:100px">Upload files</button>
         </div>
         
       </div>
-
 	
 </body>
 </html>

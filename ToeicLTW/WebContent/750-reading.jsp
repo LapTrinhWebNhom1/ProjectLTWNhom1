@@ -40,7 +40,10 @@
 <br/>
   <br/>
 <div align="center">
-  <button class="btn btn-info btn-lg" id="btnAddDoc">ADD MORE DOCUMENTS</button>
+  <li onclick="onclicktab('addfile.jsp');" >
+  <button> ADD MORE DOCUMENTS </button>
+  </li>
+  
   <button class="btn btn-info btn-lg" id="btnDelDoc">DELETE DOCUMENTS</button>
 </div>
 </body>
