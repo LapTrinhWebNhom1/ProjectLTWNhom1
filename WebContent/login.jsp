@@ -258,24 +258,32 @@
 	</div>
   <div class="col-sm-9">
 		
+			
 		<div class="courses_box1">
 	  
-	   	  <form method="POST" action="loginbean.jsp" onsubmit="return Validate()" name="vForm" method="post">
+	   	  <form method="POST" action="LoginServlet" onsubmit="return Validate()" name="vForm">
 	    	<p class="lead">Welcome Back!</p>
+	    	 <div  class="funkyradio-default">
+            	<input type="radio" name="radio" value="2" id="2" />
+            	<label for="2">User</label>
+            	<input type="radio" name="radio" value="1" id="1" />
+            	<label  for="1">Admin</label>
+           </div>
+           
 		    <div class="form-group">
-			    <input autocomplete="off" type="text" name="userName" class="required form-control" placeholder="Username">
+			    <input autocomplete="off" type="text" name="log_username" class="required form-control" placeholder="Username">
 			    <div id="name_error" class="val_error"></div>
 		    </div>
-		    
+		   
 		    <div class="form-group">
-			    <input autocomplete="off" type="password" class="password required form-control" placeholder="Password" name="password">
+			    <input autocomplete="off" type="password" class="password required form-control" placeholder="Password" name="log_password">
 			    <div id="password_error" class="val_error"></div>
 		    </div>
 		    <div class="form-group">
 		    	<input type="checkbox" name="remember" value="true"> Remember Me
-		    	<input type="submit"  name="submit" value="Log In">
+		    	<input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Log In">
 		    </div>
-	        <p>Do not have an account? 
+	        <p>Do not have an account? <a href="register.jsp" title="Sign Up">Sign Up</a></p>
 		 </form>
 	   </div>
 	

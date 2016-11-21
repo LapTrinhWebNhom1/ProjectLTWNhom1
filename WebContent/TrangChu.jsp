@@ -79,7 +79,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">toeic</a>
+					<a class="navbar-brand" href="TrangChu.jsp">toeic</a>
 				</div>
 				<!--/.navbar-header-->
 				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">

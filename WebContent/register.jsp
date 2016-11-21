@@ -39,7 +39,7 @@
     );
     });
     </script>
-    </script>
+
     <script type="text/javascript">
     $(document).ready(function () {
     $('label.tree-toggler').click(function () {
@@ -79,7 +79,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">toeic</a>
+            <a class="navbar-brand" href="TrangChu.jsp">toeic</a>
           </div>
           <!--/.navbar-header-->
           <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
@@ -119,27 +119,27 @@
         <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
           <ul class="nav navbar-nav nav_1">
             <li >
-              <a  href="index.html">Home</a>
+              <a  href="TrangChu.jsp">Home</a>
             </li>
             
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li onclick="onclicktab('managechualogin.html');">
+                <li onclick="onclicktab('managechualogin.jsp');">
                   <a href="#UploadDoc" >Upload Document</a>
                 </li>
-                <li onclick="onclicktab('managechualogin.html');">
+                <li onclick="onclicktab('managechualogin.jsp');">
                   <a href="#UploadDoc" data-toggle="tab">Shared Document</a>
                 </li>
-                <li onclick="onclicktab('managechualogin.html');">
+                <li onclick="onclicktab('managechualogin.jsp');">
                   <a href="#UploadDoc" data-toggle="tab">Plan Study</a>
                 </li>
-                <li onclick="onclicktab('managechualogin.html');">
+                <li onclick="onclicktab('managechualogin.jsp');">
                   <a href="#UploadDoc" data-toggle="tab">Study Process</a>
                 </li>
               </ul>
             </li>
-            <li onclick="onclicktab('Discusschualogin.html');"><a href="#">Discuss</a></li>
+            <li onclick="onclicktab('Discusschualogin.jsp');"><a href="#">Discuss</a></li>
           </ul>
           </div><!-- /.navbar-collapse -->
         </div>
