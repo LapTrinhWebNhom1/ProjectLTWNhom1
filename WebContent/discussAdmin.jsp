@@ -1,49 +1,52 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+ <sql:setDataSource
+	driver="com.mysql.jdbc.Driver"
+	url="jdbc:mysql://localhost/ltwtoeic"
+	user="root"
+	password="buithanhhieu"/>
+	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
+<style>
+table, th, td {
+    border: 1px solid black;
+        }
+   
+</style>
 </head>
 <body>
 	
   <h2>Discuss</h2>
   <form>
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Username</label></th>
-          <th>Email</th>
-          <th>Question</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label><input type="radio" name="optradio"></td>
-          <td>group1</td>
-          <td>group1@gmail.com</td>
-          <td>When can we use the present perfect tense?</td>
-          <td>Sep 25,2016 14:00</td>
-        </tr>
-        <tr>
-          <td><label><input type="radio" name="optradio"></td>
-          <td>Mary</td>
-          <td>mary@example.com</td>
-          <td>Can you teach me how to pronoun exactly these words "wife, why, white"?</td>
-          <td>Sep 25,2016 15:00</td>
-        </tr>
-        <tr>
-          <td><label><input type="radio" name="optradio"></td>
-          <td>July</td>
-          <td>july@example.com</td>
-          <td>When can we use the pastperfect tense?</td>
-          <td>Sep 25,2016 14:00</td>
-        </tr>
-      </tbody>
-    </table>
+    
+      <div>
+	<sql:query var="items" sql="SELECT id,usergui,noidung FROM tinnhan "/>
+	<table style="width:100%" >
+		<tr>
+			<th></th>
+		<c:forEach items="${items.columnNames}" var="name">		
+			
+			<th>${name }</th>						
+		</c:forEach>	
+		</tr>	
+		<c:forEach items="${items.rowsByIndex}" var="row">
+							
+			<tr>
+			<td><input type="radio" name="radio" id="radio1"/></td>							  
+       			<c:forEach  items="${row}" var="col">	       			 
+					<td> ${col}</td>									
+				</c:forEach>						
+			</tr>			
+		</c:forEach>
+</table>
+	
+	</div>
+   
   </form>
   
     <button type="button" class="btn btn-warning btn-md pull-right" id="btnDelModal">Delete</button>

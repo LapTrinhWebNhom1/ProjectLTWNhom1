@@ -86,7 +86,7 @@
 				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="TrangChu.jsp"><i class="fa fa-user"></i><span>Admin Logout</span></a>
+							<a href="TrangChu.jsp"><i class="fa fa-user"></i><%=session.getAttribute("username") %><span>Admin Logout</span></a>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>

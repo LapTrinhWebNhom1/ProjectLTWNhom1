@@ -11,30 +11,41 @@
     <div class="panel panel-default">
       <div class="panel-heading"><strong>Upload Files</strong></div>
       
-      <!-- Standar Form -->
+     
       <h4>Select files from your computer</h4>
-      <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
-        <div class="form-inline">
-          <div class="form-group">
-            <input type="file" name="files[jchj]" id="js-upload-files" multiple>
+       <form method="post" action="uploadServlet" enctype="multipart/form-data">
+        	<div class="form-inline">
+        	 <div class="form-group">
+            <input type="file" name="files" id="js-upload-files" >
           </div>
           <div>
              <h3>Level:</h3>
-            <select class="form-control" id="sel1">
-              <option>Document Level 250-500</option>
-              <option>Document Level 500-750</option>
-              <option>Document Level 750-990</option>
+            <select class="form-control" name="Level" id="sel1">
+              <option id="se1">Document Level 250-500</option>
+              <option id="se1">Document Level 500-750</option>
+              <option id="se1">Document Level 750-990</option>
             </select>
             <h3>Type:</h3>
-            <select class="form-control" id="sel2">
-              <option>Reading</option>
-              <option>Listening</option>
+            <select class="form-control" name ="type" id="sel2">
+              <option id="sel2">Reading</option>
+              <option id="sel2">Listening</option>
             </select>
+             <div>            
+                    <p>Title: </p>
+                   <input type="text" name="title" size="50"/>
+               </div>
+              <div>            
+                    <p>Use Name: </p>
+                   <input type="text" name="username" value="<%=session.getAttribute("username") %>" size="50"/>
+               </div>
           </div>
           <br>
-          <button type="submit" class="btn btn-info" id="js-upload-submit" style="width:100px">Upload files</button>
+          <div>
+				<input type="submit" value="Upload files">          
+          </div>
+         
         </div>
-        
+        </form>
       </div>
 
 	

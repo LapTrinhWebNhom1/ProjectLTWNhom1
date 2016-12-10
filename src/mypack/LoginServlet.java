@@ -42,6 +42,10 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		String log_username=request.getParameter("log_username");
 		String log_password=request.getParameter("log_password");
+		String radio=request.getParameter("radio");
+		
+		Double a= Double.parseDouble(radio);
+		
 
 		try{
 			// ket noi database
@@ -51,22 +55,34 @@ public class LoginServlet extends HttpServlet {
 			conn = DriverManager.getConnection(tam,"root", "buithanhhieu");
 			System.out.println("Connection DB complete!");
 			//Truy van database
-			String query = "SELECT * FROM user where username= '" +log_username+ "' and password='"+log_password+"'" ;
+			String query = "SELECT * FROM user where username= '" +log_username+ "' and password='"+log_password+"' and roleid='"+radio+"'" ;
 			Statement st = conn.createStatement();
 			ResultSet rs = st.executeQuery(query);
 			if(rs.next())
 			{
+				
+				if(a==2)
+				{
 				System.out.println("Query success!");
 				HttpSession session=request.getSession();
 				session.setAttribute("username", log_username);
 
-				request.getRequestDispatcher("index.jsp").include(request,response);
+				request.getRequestDispatcher("TrangchuSaukhilogin.jsp").include(request,response);
 				out.print(session.getAttribute("username"));
+				}
+				else{
+					System.out.println("Query success!");
+					HttpSession session=request.getSession();
+					session.setAttribute("username", log_username);
+
+					request.getRequestDispatcher("TrangChuAdmin.jsp").include(request,response);
+					out.print(session.getAttribute("username"));
+					
+				}
+				
 			}
 			else{
-				System.out.println("Query failed!");
-				out.print("loi");
-				request.getRequestDispatcher("Login.jsp").include(request, response);
+				request.getRequestDispatcher("login.jsp").include(request, response);
 			}
 
 		}

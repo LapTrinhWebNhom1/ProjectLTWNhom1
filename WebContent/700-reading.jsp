@@ -12,18 +12,18 @@
                 <h4 style="margin-left:50px">-Document Reading</h4>
                 <div>
                   <img src="hinhanh/990l1.jpg" height="60px" width="60px" align="left"  style="margain-left:60px">
-                  <a href="#"><h5 >Unit 1: Phương pháp học từ vựng hiệu quả I</h5></a>
+                  <li onclick="onclicktab('do750-reading-unit1.jsp');"><a href="#"><h5 >Unit 1: Phương pháp học từ vựng hiệu quả I</h5></a></li>
                  
                 </div>
                 <br><br>
                 <div>
                 <img src="hinhanh/L500_1.jpg" height="60px" width="60px" align="left"  style="margain-left:60px">
-                  <a href="#"><h5 >Unit 2: Phương pháp học từ vựng hiệu quả II</h5></a>
+                <li onclick="onclicktab('do750-reading-unit2.jsp');">  <a href="#"><h5 >Unit 2: Phương pháp học từ vựng hiệu quả II</h5></a>
                 </div>
                 <br><br>
                 <div>
                   <img src="hinhanh/L500_LT.jpg" height="60px" width="60px" align="left"  style="margain-left:60px">
-                  <a href="#"><h5 >Unit 3:Top 20 chủ điểm ngữ pháp thường gặp TOEIC reading-Top 1: Hình thức động từ</h5></a>
+                 <li onclick="onclicktab('do750-reading-unit3.jsp');"> <a href="#"><h5 >Unit 3:Top 20 chủ điểm ngữ pháp thường gặp TOEIC reading-Top 1: Hình thức động từ</h5></a>
                   
                 </div>
                 <br><br>

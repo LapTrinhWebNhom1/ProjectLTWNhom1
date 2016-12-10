@@ -39,7 +39,7 @@
 		);
 		});
 		</script>
-		</script>
+		
 		<script type="text/javascript">
 		$(document).ready(function () {
 		$('label.tree-toggler').click(function () {
@@ -84,7 +84,7 @@
 				<!--/.navbar-header-->
 				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
 					<ul class="nav navbar-nav">
-						<li class="dropdown">
+						<li >
 							<a href="login.jsp"><i class="fa fa-user"></i><span>Login</span></a>
 						</li>
 						<li class="dropdown">
@@ -220,7 +220,7 @@
 										<li onclick="onclicktab('250-listening.jsp');"><a href="#">Listening</a></li>
 										
 									</ul>
-								</li>
+									</li>
 							</div>
 							<div>
 								<li><label class="tree-toggler" style="font-size:20px">Document Level 500-750</label>
@@ -305,7 +305,7 @@ auto: true,
 continuous: true,
 numeric: true,
 pause:7000
-});
+});}
 </script>
 </body>
 </html>

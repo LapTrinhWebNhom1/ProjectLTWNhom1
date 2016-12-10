@@ -46,7 +46,7 @@
 		);
 		});
 		</script>
-		</script>
+	
 		<script type="text/javascript">
 		$(document).ready(function () {
 		$('label.tree-toggler').click(function () {

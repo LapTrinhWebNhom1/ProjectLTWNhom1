@@ -18,19 +18,19 @@
                 <br><br>
                 <div>
                   <img src="hinhanh/llslt2.jpg" height="60px" width="60px" align="left"  style="margain-left:60px">
-                  <a href="#"><h5 >Unit 1: Phân biệt 3 thì: Tương lai đơn, Tương lai gần,Hiện tại tiếp diễn</h5></a>
+                  <li onclick="onclicktab('do500reading-unit1.jsp');"><a href="#"><h5 >Unit 1: Phân biệt 3 thì: Tương lai đơn, Tương lai gần,Hiện tại tiếp diễn</h5></a></li>
                 </div>
                 <br><br>
                 <div>
                   <img src="hinhanh/hhh.png" height="60px" width="60px" align="left"  style="margain-left:60px">
-                  <a href="#"><h5 >Unit 2: Dấu hiệu nhận biết Tính từ, Trạng từ</h5></a>
+                 <li onclick="onclicktab('do500-reading-unit2.jsp');"> <a href="#"><h5 >Unit 2: Dấu hiệu nhận biết Tính từ, Trạng từ</h5></a></li>
                   
                 </div>
                 <br><br>
                 <div>
                   <img src="hinhanh/qq.png" height="60px" width="60px" align="left"  style="margain-left:60px">
-                  <a href=""><h5 >Unit 3:Quá khứ phân từ(V_ed) và Hiện tại phân từ(V
-                  -ing)</h5></a>
+                  <li onclick="onclicktab('do500-reading-unit3.jsp');"><a href=""><h5 >Unit 3:Quá khứ phân từ(V_ed) và Hiện tại phân từ(V
+                  -ing)</h5></a></li>
                   
                 </div>
                 <br><br>

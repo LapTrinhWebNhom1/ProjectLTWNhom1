@@ -10,16 +10,18 @@
 	
           <h3 style="margin-left:30px">Document Toeic Level 250-500</h3>
                 <h4 style="margin-left:50px">-Document Reaing</h4>
-                <br/>
-                <div>
+                <br/>    
+                          
+                 <div>                  
                   <img src="hinhanh/L500_6.jpg" height="60px" width="60px" align="left" style="margin-right:5px;" >
                   <a href="d250-reading-unit1.jsp"><h5 >Unit 1:Thì hiện tại đơn và thì hiện tạo tiếp diễn</h5></a>
                   <p>Hôm nay, tôi giới thiệu tới các bạn bảng so sánh về dạng thức cũng như cách sử dụng 2 thì khá đơn giản: Thì hiện tại đơn và Thì  Hiện tại tiếp diễn</p>
                 </div>
+               
                 <br/>
                 <div>
                   <img src="hinhanh/L500_4.jpg" height="60px" width="60px" align="left"  style="margin-right:5px;">
-                  <a href="a.jsp"><h5 > Unit 2:Thì hiện tại hoàn thành và thì hiện tại hoàn thành tiếp diễn</h5></a>
+                 <li onclick="onclicktab('do250-reading-unit2.jsp');"> <a href="#"><h5 > Unit 2:Thì hiện tại hoàn thành và thì hiện tại hoàn thành tiếp diễn</h5></a></li>
                   <p>Thì Hiện tại Hoàn thành và Hiện tại hoàn thành tiếp diễn (the present 
                   perfect tense, the present perfect continuous tense) là 2 thì gây nhiều khó
                    khăn cho học sinh. </p>
@@ -27,10 +29,10 @@
                 <br/>
                 <div>
                   <img src="hinhanh/listen_u2.jpg" height="60px" width="60px" align="left"  style="margin-right:5px;">
-                  <a href="â.jsp"><h5 >Unit 3:Thì quá khứ đơn và thì quá khứ tiếp diễn</h5></a>
+                  <li onclick="onclicktab('do250-reading-unit3.jsp');"><a href="#"><h5 >Unit 3:Thì quá khứ đơn và thì quá khứ tiếp diễn</h5></a>
                   <p>Quá khứ đơn và Quá khứ tiếp diễn là hai thì cơ bản nhưng rất quan trọng 
                   để hình thành nên những câu nói đơn giản cũng như hữu ích trong quá trình đọc ...
-                  </p>
+                  </p></li>
                 </div>
                 <br/>
                 <div>
@@ -46,6 +48,7 @@
                   <p>Để hiểu được dạng thức cũng như cách sử dụng của 2 thì này, tôi muốn các
                    bạn xem qua đoạn hội thoại ngắn sau, tự trả lời trong trường hợp nào thì ...</p>
                 </div>
+                </form>
                 
       
 </body>
